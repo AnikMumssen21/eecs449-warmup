@@ -16,6 +16,7 @@ I added a priority system to the todo application that automatically labels each
 ```bash
 python3 -m venv myenv
 source myenv/bin/activate
+```
 
 ### 2. Install dependencies
 ```bash
