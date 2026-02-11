@@ -35,3 +35,8 @@ jac start main.jac
 
 ### 5. Open in your broswer
 http://localhost:8000/
+
+
+## How does the feature work?
+
+The priority feature enhances the todo application by automatically determining the importance of each task and integrating that information into both storage and presentation. When a user enters a title, the system calls an AI-powered function defined with the `by llm()` capability, which classifies the task into one of three levels: high, medium, or low. This value is converted into a string and saved as part of the persistent `Todo` node, ensuring it remains associated with the item across future operations. The backend functions that create, retrieve, and update todos were extended to include this additional attribute in their returned data structures. On the client side, a lightweight ranking helper translates priority labels into numeric order, enabling dynamic sorting so more urgent tasks appear first. The relevant logic is primarily located near the enum and AI function definitions at the top of the file, the `priority` field within the node declaration, and the sorting and rendering updates inside the application component.
