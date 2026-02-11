@@ -1,39 +1,12 @@
-# my-todo
+# Todo List with Priority Feature
 
 A Jac client-side application with React support.
 
-## Project Structure
+## Name and UMID
 
-```
-my-todo/
-├── jac.toml              # Project configuration
-├── main.jac              # Main application entry
-├── components/           # Reusable components
-│   └── Button.cl.jac     # Example Jac component
-├── assets/               # Static assets (images, fonts, etc.)
-└── build/                # Build output (generated)
-```
+Anik Mumssen, UMID: 38540320
 
-## Getting Started
+## New Feature Added
 
-Start the development server:
+Hello
 
-```bash
-jac start main.jac
-```
-
-## Components
-
-Create Jac components in `components/` as `.cl.jac` files and import them:
-
-```jac
-cl import from .components.Button { Button }
-```
-
-## Adding Dependencies
-
-Add npm packages with the --cl flag:
-
-```bash
-jac add --cl react-router-dom
-```
