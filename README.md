@@ -20,4 +20,18 @@ source myenv/bin/activate
 
 ### 2. Install dependencies
 ```bash
-pip install -U jaclang byllm
+pip install jaseci
+```
+
+### 3. Set your API key (in the same terminal session)
+```bash
+export GEMINI_API_KEY="your-key-here"
+```
+
+### 4. Start the Jac dev server
+```bash
+jac start main.jac
+```
+
+### 5. Open in your broswer
+http://localhost:8000/
